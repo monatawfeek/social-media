@@ -1,0 +1,218 @@
+/* =================================================nav=================================== */
+@media only screen and (max-width:991px){
+.navbar-content >div:not(.navbar-content-bars){
+display: none;
+}
+.navbar-content{
+ justify-content:flex-end ;
+}
+.navbar-content-bars{
+ order:2;
+ padding:10px 5px;
+ margin:0 0 5px;
+}
+.fa-ellipsis-h{
+    display: block;
+   order:3;
+   padding:10px;
+}
+nav
+/* ======================================container w media========================================== */
+.media{
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  grid-template-areas:"con con con on" 
+  "con con con on ";*/
+} 
+
+.container{
+  /* grid-area:con; */
+  flex-direction: column;
+  width:75%;
+}
+
+.aside-left,.aside-right,main{
+  width:100%;
+}
+
+main{
+  padding: 0;
+} 
+
+.media-online{
+  /* grid-area:on; */
+  width:25%;
+  display: block;
+}
+.media-online::-webkit-scrollbar {
+  width:4px;
+  height: 30px !important;;
+}
+
+/* ==========================videos==========3==aside-left3=========================================  */
+.parent-video{
+    overflow: visible;
+}
+
+.video{
+    width: calc(95%/5);
+}
+.video:not(:last-child){
+  margin-right:calc(5%/4);
+}
+
+/* ======================================images====main3====================================== */
+.main3.parent-add{
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center; */
+  flex-wrap:wrap ;
+}
+.main3> div{
+  padding: 0 15px 15px;
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.main3 .plus{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.main3 .main3-image  {
+ width: 60%;
+}
+
+ /* ==========post1=======julie===========main4===========================  */
+ .post-like li span:nth-of-type(2){
+   display: none;
+ }
+ .post-like li span:first-of-type{
+  border-right:none;
+  padding-right: 0;
+}
+
+/* ==========================================footer===================================== */
+.footer{
+  width: 75%;
+}
+}
+/* =================================================container w media=================================== */
+@media only screen and (max-width:767px){
+  .media{
+    flex-direction: column;
+    width:100%;
+    padding: 10px 10px 0;
+   
+      /* width: 100%; */
+      /* display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: auto;
+      grid-template-areas:"con con con con" 
+      "on on on on"; */
+    
+    }
+  
+  .media-online{
+    /* width: 98%;     grid*/
+    border: crimson solid;
+     position: unset;
+   padding:0 10px;
+  width:100%;
+  }
+  .container{
+    padding: 0;
+    width:100%;
+  }
+  
+  
+  .media-online .recent-chat{
+    width: 100%;
+  }
+  
+  /* ==========================videos==========3==aside-left3=========================================  */
+  .parent-video{
+    overflow: hidden;
+  }
+  .video{
+    width: calc(97%/3);
+  }
+  .video:not(:last-child){
+    margin-right:calc(3%/2);
+  }
+  /* ==========================================photo=========================main 1========== */
+  .main1 .parent-add{
+    flex-wrap: wrap;
+    }
+  .photo li{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ==========================================footer===================================== */
+  .footer{
+    width: 100%;
+  }
+  }
+@media only screen and (max-width:575px){
+  /* ==========================videos==========3==aside-left3=========================================  */
+  .video{
+    width: calc(98%/2);
+  }
+  .video:not(:last-child){
+    margin-right:2%;
+  }
+  }
+@media only screen and (max-width:399px){
+  /* =======================================photo===================main 1========== */
+  .photo li a{ 
+    font-size:11px;
+  }
+  .photo i{
+    margin-right: 0;
+    font-size: 11px;
+  }
+  }
+@media only screen and (max-width:367px){
+  /* ======================================images====main3====================================== */
+  
+  .main3 .main3-image {
+   width: 80%;
+  }
+  
+  }
+  
+@media only screen and (max-width:350px){
+  /*===================div like w comment w share============main===========post-like================= */
+  .post-like a{
+    display: flex;
+    align-items: center;
+  }
+  
+  }
+
+@media only screen and (max-width:334px){
+
+  /* ==========================================photo=========================main 1========== */
+.photo .link{
+  margin-top: 10px;
+}
+  /*===================div like w comment w share============main===========post-like================= */
+  .post-like span {
+   font-size: 10px;
+  }
+  .write-your-comment textarea{
+    padding:15px;
+    font-size: 11px;
+  }
+  /* ======================================images====main3====================================== */
+
+.main3 a{
+ font-size: 12px;
+ }
+ 
+}
